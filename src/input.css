@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.nav-humberger {
+  @apply w-[30px] h-[2px] my-2 block bg-bgsecondary;
+}
+
+.humberger-active > span:nth-child(1) {
+  @apply origin-top-left rotate-45;
+}
+
+.humberger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.humberger-active > span:nth-child(3) {
+  @apply origin-bottom-left -rotate-45;
+}
+
+.header-fixed {
+  @apply fixed z-[999] opacity-90 drop-shadow-sm shadow-xl;
+}
+
+.task-hover {
+  @apply opacity-0 inset-0 px-4 flex flex-wrap  items-center  hover:bg-opacity-60 hover:opacity-100 hover:bg-bgsecondary;
+}
