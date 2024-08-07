@@ -12,6 +12,12 @@ module.exports = {
       },
     },
   },
+  variants: {
+    // ...
+    margin: ["responsive"],
+    margin: ["responsive", "hover", "focus"],
+  },
+
   plugins: [
     function ({ addComponents }) {
       addComponents({
